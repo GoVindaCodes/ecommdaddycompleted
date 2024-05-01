@@ -61,7 +61,7 @@ const CategoryTable = ({
   //   };
   //   fetchData();
   // }, []);
-
+  console.log("categories: ", categories)
   return (
     <>
       {isCheck?.length < 1 && (
@@ -171,7 +171,7 @@ const CategoryTable = ({
               />
             </TableCell>
             <TableCell>
-              <EditDeleteButtons
+              <EditDeleteButton
                 id={category?._id}
                 parent={category?.parent}
                 isCheck={isCheck}
