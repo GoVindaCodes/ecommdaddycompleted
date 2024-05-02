@@ -86,7 +86,7 @@ const CustomPagination = ({ currentPage, totalResults, resultsPerPage, onChange,
                 {Array.from({ length: totalPages }, (_, i) => (
                     <button
                         key={i}
-                        className={`relative inline-flex items-center px-2 py-1 rounded  text-sm font-sm  hover:bg-gray-50 focus:z-10 ${currentPage === i + 1 ? 'bg-green-500 text-white' : 'hover:bg-gray-50'}`}
+                        className={`relative inline-flex items-center px-2 py-1 rounded bg-white text-sm font-medium focus:z-10 ${currentPage === i + 1 ? 'bg-green-500 text-white' : 'hover:bg-gray-50'}`}
                         onClick={() => onChange(i + 1)}
                     >
                         {i + 1}
